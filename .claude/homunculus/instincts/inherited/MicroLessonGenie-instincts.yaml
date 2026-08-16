@@ -1,0 +1,305 @@
+# Instincts generated from https://github.com/MajorDream444/MicroLessonGenie
+# Generated: 2026-07-19T11:36:53.860Z
+# Version: 2.0
+# NOTE: This file supplements (does not replace) any existing curated instincts.
+# High-confidence manually curated instincts should be preserved alongside these.
+
+---
+id: MicroLessonGenie-commit-conventional
+trigger: "when writing a commit message"
+confidence: 0.85
+domain: git
+source: repo-analysis
+source_repo: https://github.com/MajorDream444/MicroLessonGenie
+---
+
+# MicroLessonGenie Commit Conventional
+
+## Action
+
+Use conventional commit format with prefixes: chore
+
+## Evidence
+
+- 4 commits analyzed
+- Detected conventional commit pattern
+- Examples: chore: add production readiness control (AGENTS.md), chore: add production readiness control (CLAUDE.md)
+
+---
+id: MicroLessonGenie-commit-length
+trigger: "when writing a commit message"
+confidence: 0.6
+domain: git
+source: repo-analysis
+source_repo: https://github.com/MajorDream444/MicroLessonGenie
+---
+
+# MicroLessonGenie Commit Length
+
+## Action
+
+Write moderate-length commit messages (~62 characters)
+
+## Evidence
+
+- Average commit message length: 62 chars
+- Based on 4 commits
+
+---
+id: MicroLessonGenie-naming-files
+trigger: "when creating a new file"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/MajorDream444/MicroLessonGenie
+---
+
+# MicroLessonGenie Naming Files
+
+## Action
+
+Use snake_case naming convention
+
+## Evidence
+
+- Analyzed file naming patterns in repository
+- Dominant pattern: snake_case
+
+---
+id: MicroLessonGenie-import-relative
+trigger: "when importing modules"
+confidence: 0.75
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/MajorDream444/MicroLessonGenie
+---
+
+# MicroLessonGenie Import Relative
+
+## Action
+
+Use relative imports for project files
+
+## Evidence
+
+- Import analysis shows relative import pattern
+- Example: import { x } from '../lib/x'
+
+---
+id: MicroLessonGenie-export-style
+trigger: "when exporting from a module"
+confidence: 0.7
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/MajorDream444/MicroLessonGenie
+---
+
+# MicroLessonGenie Export Style
+
+## Action
+
+Prefer named exports
+
+## Evidence
+
+- Export pattern analysis
+- Dominant style: named
+
+---
+id: MicroLessonGenie-test-separate
+trigger: "when writing tests"
+confidence: 0.8
+domain: testing
+source: repo-analysis
+source_repo: https://github.com/MajorDream444/MicroLessonGenie
+---
+
+# MicroLessonGenie Test Separate
+
+## Action
+
+Place tests in the tests/ or __tests__/ directory, mirroring src structure
+
+## Evidence
+
+- Separate test directory pattern detected
+- Tests live in dedicated test folders
+
+---
+id: MicroLessonGenie-workflow-add-production-readiness-control
+trigger: "when doing add production readiness control"
+confidence: 0.7
+domain: workflow
+source: repo-analysis
+source_repo: https://github.com/MajorDream444/MicroLessonGenie
+---
+
+# MicroLessonGenie Workflow Add Production Readiness Control
+
+## Action
+
+Follow the add-production-readiness-control workflow:
+1. Identify the documentation or template file relevant to production readiness (e.g., AGENTS.md, CLAUDE.md, .github/PRODUCTION_READINESS.md, .github/pull_request_template.md).
+2. Edit or create the file to include new production readiness controls or guidelines.
+3. Commit the changes with a message indicating production readiness control update.
+
+## Evidence
+
+- Workflow detected from commit patterns
+- Frequency: ~4x per month
+- Files: AGENTS.md, CLAUDE.md, .github/PRODUCTION_READINESS.md
+
+---
+id: microlessongenie-instinct-file-naming
+trigger: "When creating or renaming a file in the codebase"
+confidence: 0.85
+domain: code-style
+source: repo-analysis
+source_repo: MajorDream444/MicroLessonGenie
+---
+
+# Microlessongenie Instinct File Naming
+
+## Action
+
+Use snake_case for file names
+
+## Evidence
+
+- Pattern in namingConventions.files: snake_case
+
+---
+id: microlessongenie-instinct-function-naming
+trigger: "When defining a function"
+confidence: 0.85
+domain: code-style
+source: repo-analysis
+source_repo: MajorDream444/MicroLessonGenie
+---
+
+# Microlessongenie Instinct Function Naming
+
+## Action
+
+Use camelCase for function names
+
+## Evidence
+
+- Pattern in namingConventions.functions: camelCase
+
+---
+id: microlessongenie-instinct-class-naming
+trigger: "When defining a class"
+confidence: 0.85
+domain: code-style
+source: repo-analysis
+source_repo: MajorDream444/MicroLessonGenie
+---
+
+# Microlessongenie Instinct Class Naming
+
+## Action
+
+Use PascalCase for class names
+
+## Evidence
+
+- Pattern in namingConventions.classes: PascalCase
+
+---
+id: microlessongenie-instinct-constant-naming
+trigger: "When defining a constant"
+confidence: 0.85
+domain: code-style
+source: repo-analysis
+source_repo: MajorDream444/MicroLessonGenie
+---
+
+# Microlessongenie Instinct Constant Naming
+
+## Action
+
+Use SCREAMING_SNAKE_CASE for constant names
+
+## Evidence
+
+- Pattern in namingConventions.constants: SCREAMING_SNAKE_CASE
+
+---
+id: microlessongenie-instinct-import-style
+trigger: "When importing modules"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: MajorDream444/MicroLessonGenie
+---
+
+# Microlessongenie Instinct Import Style
+
+## Action
+
+Use relative import paths
+
+## Evidence
+
+- Pattern in importStyle: relative
+
+---
+id: microlessongenie-instinct-export-style
+trigger: "When exporting from a module"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: MajorDream444/MicroLessonGenie
+---
+
+# Microlessongenie Instinct Export Style
+
+## Action
+
+Use named exports
+
+## Evidence
+
+- Pattern in exportStyle: named
+
+---
+id: microlessongenie-instinct-git-commit-format
+trigger: "When making a commit"
+confidence: 0.9
+domain: git
+source: repo-analysis
+source_repo: MajorDream444/MicroLessonGenie
+---
+
+# Microlessongenie Instinct Git Commit Format
+
+## Action
+
+Use the conventional commit format with the 'chore' prefix for production readiness changes
+
+## Evidence
+
+- Seen in commit: chore: add production readiness control (AGENTS.md)
+- Pattern in commits.prefixes: chore
+
+---
+id: microlessongenie-instinct-production-readiness-workflow
+trigger: "When introducing or updating production readiness controls or documentation for agents, features, or the repository"
+confidence: 0.92
+domain: workflow
+source: repo-analysis
+source_repo: MajorDream444/MicroLessonGenie
+---
+
+# Microlessongenie Instinct Production Readiness Workflow
+
+## Action
+
+Edit or create the relevant documentation/template file (AGENTS.md, CLAUDE.md, .github/PRODUCTION_READINESS.md, .github/pull_request_template.md), then commit with a message indicating production readiness control update
+
+## Evidence
+
+- Workflow: add-production-readiness-control
+- Seen in commits: chore: add production readiness control (AGENTS.md), etc.
+
